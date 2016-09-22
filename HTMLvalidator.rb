@@ -5,6 +5,10 @@ require 'csv'
 require 'pry'
 require 'trollop'
 
+class HTMLValidator
+
+end
+
 # Returns response object given the url to test
 def HTTPRequest(url)
   uri = URI('http://validator.w3.org/nu/')

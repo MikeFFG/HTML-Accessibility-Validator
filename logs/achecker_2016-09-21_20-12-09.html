@@ -1,0 +1,2013 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Web Accessibility Checker report</title>
+<meta name="author" content="AChecker - Web Accessibility Checker http://www.atutor.ca/achecker/" /> 
+	
+<style type="text/css">
+ul {font-family: Arial; margin-bottom: 0px; margin-top: 0px; margin-right: 0px;}
+li.msg_err, li.msg_info { font-family: Arial; margin-bottom: 20px;list-style: none;}
+span.msg{font-family: Arial; line-height: 150%;}
+code.input { margin-bottom: 2ex; background-color: #F8F8F8; line-height: 130%;}
+span.err_type{ padding: .1em .5em; font-size: smaller;}
+span.info_msg { line-height: 100%; color: blue; padding: 1em 1em; font-size: large; font-weight: bold;}
+span.congrats_msg { line-height: 120%; color: green; padding: 1em 1em; font-size: large; font-weight: bold; white-space: nowrap;}
+</style>
+</head>
+<body>
+<p>
+<strong>Result: </strong>
+<span style="background-color: red; border: solid green; padding-right: 1em; padding-left: 1em">FAIL</span>&nbsp;&nbsp;
+<span style="color:red"><span style="font-weight: bold;">2 Errors&nbsp;&nbsp;1 Likely Problems&nbsp;&nbsp;120 Potential Problems&nbsp;&nbsp;</span></span>
+<strong><br />
+<strong>Guides: </strong><a title="WCAG 2.0 (Level AA)(link opens in a new window)" target="_new" href="http://achecker.ca/guideline/view_guideline.php?id=8">WCAG 2.0 (Level AA)(link opens in a new window)</a>&nbsp;&nbsp;
+</p>
+<h3>Accessibility Review</h3>
+<h4>Errors</h4>
+<div id="errors" style="margin-top:1em">
+	<ul>
+      <li class="msg_err">
+         <span class="err_type"><img src="http://achecker.ca/images/error.png" alt="Error" title="Error" width="15" height="15" /></span>
+         <em>Line 38, Column 96</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=252"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=252'); return false;" 
+               target="_new">All text colors are not set.</a>
+         </span>
+         <pre><code class="input">&lt;body bgcolor=&quot;#fff&quot;&gt;&lt;script&gt;(function(){var src='/images/nav_logo229.png';var iesg=false;document.b ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+                  <span style="font-weight:bold">Repair: </span>Ensure all the text colors or none of the text colors are set using attributes on the <code>body</code> element.
+
+         
+         
+       </li>
+      <li class="msg_err">
+         <span class="err_type"><img src="http://achecker.ca/images/error.png" alt="Error" title="Error" width="15" height="15" /></span>
+         <em>Line 41, Column 4737</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=301"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=301'); return false;" 
+               target="_new">The contrast between the colour of text and its background for the element is not sufficient  to meet WCAG2.0 Level AA.</a>
+         </span>
+         <pre><code class="input">&lt;div style=&quot;color:#777;font-size:16px;font-weight:bold;position:relative;top:70px;left:218px&quot; nowrap ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+                  <span style="font-weight:bold">Repair: </span>Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 4.5:1 for standard text, or 3:1 for larger text. Change colour codes to produce sufficient contrast.
+
+http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head
+
+         
+         
+       </li>
+</ul>
+</div><br/><h4>Likely Problems</h4>
+<div id="likely_problems" style="margin-top:1em">
+	<ul>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/warning.png" alt="Warning: Confirmation Required" title="Warning: Confirmation Required" width="15" height="15" /></span>
+         <em>Line 41, Column 1592</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=173"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=173'); return false;" 
+               target="_new">Suspicious link text (contains placeholder text).</a>
+         </span>
+         <pre><code class="input">&lt;a class=gbgt id=gbztm href=&quot;https://www.google.ca/intl/en/options/&quot; onclick=&quot;gbar.tg(event,this)&quot; a ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+</ul>
+</div><br/><h4>Potential Problems</h4>
+<div id="potential_problems" style="margin-top:1em">
+	<ul>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 1, Column 251</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=54"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=54'); return false;" 
+               target="_new"><code>title</code> might not describe the document.</a>
+         </span>
+         <pre><code class="input">&lt;title&gt;Google&lt;/title&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 1, Column 272</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=89"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=89'); return false;" 
+               target="_new"><code>script</code> user interface may not be accessible.</a>
+         </span>
+         <pre><code class="input">&lt;script&gt;(function(){window.google={kEI:'luniV9_iH6bqjwSjkpqoAw',kEXPI:'1351563,1351633,1351727,37002 ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 1, Column 272</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=86"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=86'); return false;" 
+               target="_new"><code>script</code> may use color alone.</a>
+         </span>
+         <pre><code class="input">&lt;script&gt;(function(){window.google={kEI:'luniV9_iH6bqjwSjkpqoAw',kEXPI:'1351563,1351633,1351727,37002 ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 1, Column 272</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=87"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=87'); return false;" 
+               target="_new"><code>script</code> may cause screen flicker.</a>
+         </span>
+         <pre><code class="input">&lt;script&gt;(function(){window.google={kEI:'luniV9_iH6bqjwSjkpqoAw',kEXPI:'1351563,1351633,1351727,37002 ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 4, Column 38</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=89"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=89'); return false;" 
+               target="_new"><code>script</code> user interface may not be accessible.</a>
+         </span>
+         <pre><code class="input">&lt;script&gt;(function(){try{var e=this;var aa=function(a,b,c,d){d=d||{};d._sn=[&quot;cfg&quot;,b,c].join(&quot;.&quot;);wind ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 4, Column 38</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=86"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=86'); return false;" 
+               target="_new"><code>script</code> may use color alone.</a>
+         </span>
+         <pre><code class="input">&lt;script&gt;(function(){try{var e=this;var aa=function(a,b,c,d){d=d||{};d._sn=[&quot;cfg&quot;,b,c].join(&quot;.&quot;);wind ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 4, Column 38</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=87"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=87'); return false;" 
+               target="_new"><code>script</code> may cause screen flicker.</a>
+         </span>
+         <pre><code class="input">&lt;script&gt;(function(){try{var e=this;var aa=function(a,b,c,d){d=d||{};d._sn=[&quot;cfg&quot;,b,c].join(&quot;.&quot;);wind ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 38, Column 96</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=184"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=184'); return false;" 
+               target="_new">Site missing site map.</a>
+         </span>
+         <pre><code class="input">&lt;body bgcolor=&quot;#fff&quot;&gt;&lt;script&gt;(function(){var src='/images/nav_logo229.png';var iesg=false;document.b ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 38, Column 96</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=271"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=271'); return false;" 
+               target="_new"><code>dir</code> attribute may be required to identify changes in text direction.</a>
+         </span>
+         <pre><code class="input">&lt;body bgcolor=&quot;#fff&quot;&gt;&lt;script&gt;(function(){var src='/images/nav_logo229.png';var iesg=false;document.b ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 38, Column 96</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=131"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=131'); return false;" 
+               target="_new">Long quotations may not be marked using the <code>blockquote</code> element.</a>
+         </span>
+         <pre><code class="input">&lt;body bgcolor=&quot;#fff&quot;&gt;&lt;script&gt;(function(){var src='/images/nav_logo229.png';var iesg=false;document.b ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 38, Column 96</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=250"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=250'); return false;" 
+               target="_new">Text may refer to items by shape, size, or relative position alone.</a>
+         </span>
+         <pre><code class="input">&lt;body bgcolor=&quot;#fff&quot;&gt;&lt;script&gt;(function(){var src='/images/nav_logo229.png';var iesg=false;document.b ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 38, Column 96</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=276"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=276'); return false;" 
+               target="_new">Repeated components may not appear in the same relative order each time they appear.</a>
+         </span>
+         <pre><code class="input">&lt;body bgcolor=&quot;#fff&quot;&gt;&lt;script&gt;(function(){var src='/images/nav_logo229.png';var iesg=false;document.b ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 38, Column 96</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=270"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=270'); return false;" 
+               target="_new">Unicode right-to-left marks or left-to-right marks may be required.</a>
+         </span>
+         <pre><code class="input">&lt;body bgcolor=&quot;#fff&quot;&gt;&lt;script&gt;(function(){var src='/images/nav_logo229.png';var iesg=false;document.b ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 38, Column 96</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=262"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=262'); return false;" 
+               target="_new">Groups of links with a related purpose are not marked.</a>
+         </span>
+         <pre><code class="input">&lt;body bgcolor=&quot;#fff&quot;&gt;&lt;script&gt;(function(){var src='/images/nav_logo229.png';var iesg=false;document.b ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 38, Column 96</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=110"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=110'); return false;" 
+               target="_new">Words or phrases that are not in the document's primary language may not be identified.</a>
+         </span>
+         <pre><code class="input">&lt;body bgcolor=&quot;#fff&quot;&gt;&lt;script&gt;(function(){var src='/images/nav_logo229.png';var iesg=false;document.b ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 38, Column 96</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=248"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=248'); return false;" 
+               target="_new">Visual lists may not be properly marked.</a>
+         </span>
+         <pre><code class="input">&lt;body bgcolor=&quot;#fff&quot;&gt;&lt;script&gt;(function(){var src='/images/nav_logo229.png';var iesg=false;document.b ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 38, Column 96</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=28"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=28'); return false;" 
+               target="_new">Document may be missing a "skip to content" link.</a>
+         </span>
+         <pre><code class="input">&lt;body bgcolor=&quot;#fff&quot;&gt;&lt;script&gt;(function(){var src='/images/nav_logo229.png';var iesg=false;document.b ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 38, Column 117</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=89"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=89'); return false;" 
+               target="_new"><code>script</code> user interface may not be accessible.</a>
+         </span>
+         <pre><code class="input">&lt;script&gt;(function(){var src='/images/nav_logo229.png';var iesg=false;document.body.onload = function ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 38, Column 117</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=86"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=86'); return false;" 
+               target="_new"><code>script</code> may use color alone.</a>
+         </span>
+         <pre><code class="input">&lt;script&gt;(function(){var src='/images/nav_logo229.png';var iesg=false;document.body.onload = function ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 38, Column 117</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=87"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=87'); return false;" 
+               target="_new"><code>script</code> may cause screen flicker.</a>
+         </span>
+         <pre><code class="input">&lt;script&gt;(function(){var src='/images/nav_logo229.png';var iesg=false;document.body.onload = function ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 40</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=89"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=89'); return false;" 
+               target="_new"><code>script</code> user interface may not be accessible.</a>
+         </span>
+         <pre><code class="input">&lt;script&gt;window.gbar&amp;&amp;gbar.eli&amp;&amp;gbar.eli()&lt;/script&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 40</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=86"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=86'); return false;" 
+               target="_new"><code>script</code> may use color alone.</a>
+         </span>
+         <pre><code class="input">&lt;script&gt;window.gbar&amp;&amp;gbar.eli&amp;&amp;gbar.eli()&lt;/script&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 40</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=87"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=87'); return false;" 
+               target="_new"><code>script</code> may cause screen flicker.</a>
+         </span>
+         <pre><code class="input">&lt;script&gt;window.gbar&amp;&amp;gbar.eli&amp;&amp;gbar.eli()&lt;/script&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 157</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:1}); class=&quot;gbzt gbz0l gbp1&quot; id=gb_1 href=&quot;https://www.google.ca/webh ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 157</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:1}); class=&quot;gbzt gbz0l gbp1&quot; id=gb_1 href=&quot;https://www.google.ca/webh ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 345</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:2}); class=gbzt id=gb_2 href=&quot;http://www.google.ca/imghp?hl=en&amp;tab=wi ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 345</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:2}); class=gbzt id=gb_2 href=&quot;http://www.google.ca/imghp?hl=en&amp;tab=wi ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 525</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:8}); class=gbzt id=gb_8 href=&quot;http://maps.google.ca/maps?hl=en&amp;tab=wl ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 525</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:8}); class=gbzt id=gb_8 href=&quot;http://maps.google.ca/maps?hl=en&amp;tab=wl ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 703</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:78}); class=gbzt id=gb_78 href=&quot;https://play.google.com/?hl=en&amp;tab=w8 ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 703</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:78}); class=gbzt id=gb_78 href=&quot;https://play.google.com/?hl=en&amp;tab=w8 ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 881</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:36}); class=gbzt id=gb_36 href=&quot;http://www.youtube.com/?gl=CA&amp;tab=w1&quot; ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 881</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:36}); class=gbzt id=gb_36 href=&quot;http://www.youtube.com/?gl=CA&amp;tab=w1&quot; ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 1061</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:5}); class=gbzt id=gb_5 href=&quot;http://news.google.ca/nwshp?hl=en&amp;tab=w ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 1061</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:5}); class=gbzt id=gb_5 href=&quot;http://news.google.ca/nwshp?hl=en&amp;tab=w ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 1240</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:23}); class=gbzt id=gb_23 href=&quot;https://mail.google.com/mail/?tab=wm&quot; ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 1240</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:23}); class=gbzt id=gb_23 href=&quot;https://mail.google.com/mail/?tab=wm&quot; ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 1418</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:49}); class=gbzt id=gb_49 href=&quot;https://drive.google.com/?tab=wo&quot;&gt;&lt;sp ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 1418</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:49}); class=gbzt id=gb_49 href=&quot;https://drive.google.com/?tab=wo&quot;&gt;&lt;sp ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 1592</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a class=gbgt id=gbztm href=&quot;https://www.google.ca/intl/en/options/&quot; onclick=&quot;gbar.tg(event,this)&quot; a ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 1592</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a class=gbgt id=gbztm href=&quot;https://www.google.ca/intl/en/options/&quot; onclick=&quot;gbar.tg(event,this)&quot; a ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 1974</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:24}); class=gbmt id=gb_24 href=&quot;https://www.google.com/calendar?tab=w ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 1974</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:24}); class=gbmt id=gb_24 href=&quot;https://www.google.com/calendar?tab=w ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 2110</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:51}); class=gbmt id=gb_51 href=&quot;http://translate.google.ca/?hl=en&amp;tab ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 2110</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:51}); class=gbmt id=gb_51 href=&quot;http://translate.google.ca/?hl=en&amp;tab ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 2249</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:10}); class=gbmt id=gb_10 href=&quot;https://books.google.ca/bkshp?hl=en&amp;t ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 2249</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:10}); class=gbmt id=gb_10 href=&quot;https://books.google.ca/bkshp?hl=en&amp;t ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 2386</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:30}); class=gbmt id=gb_30 href=&quot;http://www.blogger.com/?tab=wj&quot;&gt;Blogg ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 2386</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:30}); class=gbmt id=gb_30 href=&quot;http://www.blogger.com/?tab=wj&quot;&gt;Blogg ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 2513</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:27}); class=gbmt id=gb_27 href=&quot;http://www.google.ca/finance?tab=we&quot;&gt; ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 2513</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:27}); class=gbmt id=gb_27 href=&quot;http://www.google.ca/finance?tab=we&quot;&gt; ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 2645</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:31}); class=gbmt id=gb_31 href=&quot;https://photos.google.com/?tab=wq&quot;&gt;Ph ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 2645</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:31}); class=gbmt id=gb_31 href=&quot;https://photos.google.com/?tab=wq&quot;&gt;Ph ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 2774</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:12}); class=gbmt id=gb_12 href=&quot;http://video.google.ca/?hl=en&amp;tab=wv&quot; ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 2774</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:12}); class=gbmt id=gb_12 href=&quot;http://video.google.ca/?hl=en&amp;tab=wv&quot; ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 2906</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:25}); class=gbmt id=gb_25 href=&quot;https://docs.google.com/document/?usp ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 2906</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:25}); class=gbmt id=gb_25 href=&quot;https://docs.google.com/document/?usp ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 3096</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:66}); href=&quot;https://www.google.ca/intl/en/options/&quot; class=gbmt&gt;Even m ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 3096</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a onclick=gbar.logger.il(1,{t:66}); href=&quot;https://www.google.ca/intl/en/options/&quot; class=gbmt&gt;Even m ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 3307</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=43"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=43'); return false;" 
+               target="_new"><code>h2</code> may be used for formatting.</a>
+         </span>
+         <pre><code class="input">&lt;h2 class=gbxx&gt;Account Options&lt;/h2&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 3396</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a target=_top href=&quot;https://accounts.google.com/ServiceLogin?hl=en&amp;passive=true&amp;continue=http://www ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 3396</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a target=_top href=&quot;https://accounts.google.com/ServiceLogin?hl=en&amp;passive=true&amp;continue=http://www ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 3770</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a class=gbgt id=gbg5 href=&quot;http://www.google.ca/preferences?hl=en&quot; title=&quot;Options&quot; onclick=&quot;gbar.tg ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 3770</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a class=gbgt id=gbg5 href=&quot;http://www.google.ca/preferences?hl=en&quot; title=&quot;Options&quot; onclick=&quot;gbar.tg ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 4103</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a  class=gbmt href=&quot;/preferences?hl=en&quot;&gt;Search settings&lt;/a&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 4103</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a  class=gbmt href=&quot;/preferences?hl=en&quot;&gt;Search settings&lt;/a&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 4241</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a class=gbmt href=&quot;http://www.google.ca/history/optout?hl=en&quot;&gt;Web History&lt;/a&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 4241</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a class=gbmt href=&quot;http://www.google.ca/history/optout?hl=en&quot;&gt;Web History&lt;/a&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 4401</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=89"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=89'); return false;" 
+               target="_new"><code>script</code> user interface may not be accessible.</a>
+         </span>
+         <pre><code class="input">&lt;script&gt;window.gbar&amp;&amp;gbar.elp&amp;&amp;gbar.elp()&lt;/script&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 4401</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=86"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=86'); return false;" 
+               target="_new"><code>script</code> may use color alone.</a>
+         </span>
+         <pre><code class="input">&lt;script&gt;window.gbar&amp;&amp;gbar.elp&amp;&amp;gbar.elp()&lt;/script&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 4401</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=87"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=87'); return false;" 
+               target="_new"><code>script</code> may cause screen flicker.</a>
+         </span>
+         <pre><code class="input">&lt;script&gt;window.gbar&amp;&amp;gbar.elp&amp;&amp;gbar.elp()&lt;/script&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 4875</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=272"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=272'); return false;" 
+               target="_new">Form may delete information without allowing for recovery.</a>
+         </span>
+         <pre><code class="input">&lt;form action=&quot;/search&quot; name=&quot;f&quot;&gt;&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;&lt;tr valign=&quot;top&quot;&gt;&lt;td width=&quot;2 ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 4875</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=246"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=246'); return false;" 
+               target="_new">All required <code>form</code> fields may not be indicated as required.</a>
+         </span>
+         <pre><code class="input">&lt;form action=&quot;/search&quot; name=&quot;f&quot;&gt;&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;&lt;tr valign=&quot;top&quot;&gt;&lt;td width=&quot;2 ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 4875</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=269"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=269'); return false;" 
+               target="_new">Form submission data may not be presented to the user before final acceptance of an irreversable transaction.</a>
+         </span>
+         <pre><code class="input">&lt;form action=&quot;/search&quot; name=&quot;f&quot;&gt;&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;&lt;tr valign=&quot;top&quot;&gt;&lt;td width=&quot;2 ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 4875</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=265"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=265'); return false;" 
+               target="_new">Tab order may not follow logical order.</a>
+         </span>
+         <pre><code class="input">&lt;form action=&quot;/search&quot; name=&quot;f&quot;&gt;&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;&lt;tr valign=&quot;top&quot;&gt;&lt;td width=&quot;2 ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 4875</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=268"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=268'); return false;" 
+               target="_new">Form submission error messages may not provide assistance.</a>
+         </span>
+         <pre><code class="input">&lt;form action=&quot;/search&quot; name=&quot;f&quot;&gt;&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;&lt;tr valign=&quot;top&quot;&gt;&lt;td width=&quot;2 ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 4875</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=267"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=267'); return false;" 
+               target="_new">Form submission error messages may not identify empty required fields.</a>
+         </span>
+         <pre><code class="input">&lt;form action=&quot;/search&quot; name=&quot;f&quot;&gt;&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;&lt;tr valign=&quot;top&quot;&gt;&lt;td width=&quot;2 ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 4907</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=136"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=136'); return false;" 
+               target="_new">Data <code>table</code> may require <code>th</code> elements.</a>
+         </span>
+         <pre><code class="input">&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;&lt;tr valign=&quot;top&quot;&gt;&lt;td width=&quot;25%&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td align=&quot;center ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 4907</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=133"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=133'); return false;" 
+               target="_new">Layout <code>table</code> may not linearize.</a>
+         </span>
+         <pre><code class="input">&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;&lt;tr valign=&quot;top&quot;&gt;&lt;td width=&quot;25%&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td align=&quot;center ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 5019</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=189"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=189'); return false;" 
+               target="_new"><code>label</code> may not describe its associated control.</a>
+         </span>
+         <pre><code class="input">&lt;input name=&quot;ie&quot; value=&quot;ISO-8859-1&quot; type=&quot;hidden&quot;&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 5069</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=189"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=189'); return false;" 
+               target="_new"><code>label</code> may not describe its associated control.</a>
+         </span>
+         <pre><code class="input">&lt;input value=&quot;en-CA&quot; name=&quot;hl&quot; type=&quot;hidden&quot;&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 5114</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=189"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=189'); return false;" 
+               target="_new"><code>label</code> may not describe its associated control.</a>
+         </span>
+         <pre><code class="input">&lt;input name=&quot;source&quot; type=&quot;hidden&quot; value=&quot;hp&quot;&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 5160</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=189"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=189'); return false;" 
+               target="_new"><code>label</code> may not describe its associated control.</a>
+         </span>
+         <pre><code class="input">&lt;input name=&quot;biw&quot; type=&quot;hidden&quot;&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 5192</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=189"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=189'); return false;" 
+               target="_new"><code>label</code> may not describe its associated control.</a>
+         </span>
+         <pre><code class="input">&lt;input name=&quot;bih&quot; type=&quot;hidden&quot;&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 5273</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=189"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=189'); return false;" 
+               target="_new"><code>label</code> may not describe its associated control.</a>
+         </span>
+         <pre><code class="input">&lt;input style=&quot;color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top&quot; autocomplete=&quot;off&quot; class ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 5273</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=55"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=55'); return false;" 
+               target="_new"><code>input</code> possibly using color alone.</a>
+         </span>
+         <pre><code class="input">&lt;input style=&quot;color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top&quot; autocomplete=&quot;off&quot; class ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 5515</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=189"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=189'); return false;" 
+               target="_new"><code>label</code> may not describe its associated control.</a>
+         </span>
+         <pre><code class="input">&lt;input class=&quot;lsb&quot; value=&quot;Google Search&quot; name=&quot;btnG&quot; type=&quot;submit&quot;&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 5515</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=55"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=55'); return false;" 
+               target="_new"><code>input</code> possibly using color alone.</a>
+         </span>
+         <pre><code class="input">&lt;input class=&quot;lsb&quot; value=&quot;Google Search&quot; name=&quot;btnG&quot; type=&quot;submit&quot;&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 5632</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=189"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=189'); return false;" 
+               target="_new"><code>label</code> may not describe its associated control.</a>
+         </span>
+         <pre><code class="input">&lt;input class=&quot;lsb&quot; value=&quot;I'm Feeling Lucky&quot; name=&quot;btnI&quot; onclick=&quot;if(this.form.q.value)this.checked= ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 5632</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=55"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=55'); return false;" 
+               target="_new"><code>input</code> possibly using color alone.</a>
+         </span>
+         <pre><code class="input">&lt;input class=&quot;lsb&quot; value=&quot;I'm Feeling Lucky&quot; name=&quot;btnI&quot; onclick=&quot;if(this.form.q.value)this.checked= ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 5854</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a href=&quot;/advanced_search?hl=en-CA&amp;amp;authuser=0&quot;&gt;Advanced search&lt;/a&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 5854</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a href=&quot;/advanced_search?hl=en-CA&amp;amp;authuser=0&quot;&gt;Advanced search&lt;/a&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 5924</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a href=&quot;/language_tools?hl=en-CA&amp;amp;authuser=0&quot;&gt;Language tools&lt;/a&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 5924</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a href=&quot;/language_tools?hl=en-CA&amp;amp;authuser=0&quot;&gt;Language tools&lt;/a&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 6010</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=189"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=189'); return false;" 
+               target="_new"><code>label</code> may not describe its associated control.</a>
+         </span>
+         <pre><code class="input">&lt;input id=&quot;gbv&quot; name=&quot;gbv&quot; type=&quot;hidden&quot; value=&quot;1&quot;&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 6061</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=89"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=89'); return false;" 
+               target="_new"><code>script</code> user interface may not be accessible.</a>
+         </span>
+         <pre><code class="input">&lt;script&gt;(function(){var a,b=&quot;1&quot;;if(document&amp;&amp;document.getElementById)if(&quot;undefined&quot;!=typeof XMLHttpR ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 6061</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=86"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=86'); return false;" 
+               target="_new"><code>script</code> may use color alone.</a>
+         </span>
+         <pre><code class="input">&lt;script&gt;(function(){var a,b=&quot;1&quot;;if(document&amp;&amp;document.getElementById)if(&quot;undefined&quot;!=typeof XMLHttpR ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 6061</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=87"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=87'); return false;" 
+               target="_new"><code>script</code> may cause screen flicker.</a>
+         </span>
+         <pre><code class="input">&lt;script&gt;(function(){var a,b=&quot;1&quot;;if(document&amp;&amp;document.getElementById)if(&quot;undefined&quot;!=typeof XMLHttpR ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 6253</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a href=&quot;http://www.google.ca/setprefs?sig=0_AgYodd2QBm3VA1jgTEIseXmnm84%3D&amp;amp;hl=fr&amp;amp;source=hom ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 6253</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a href=&quot;http://www.google.ca/setprefs?sig=0_AgYodd2QBm3VA1jgTEIseXmnm84%3D&amp;amp;hl=fr&amp;amp;source=hom ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 6546</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input"></code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 6546</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input"></code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 6594</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a href=&quot;/services/&quot;&gt;Business Solutions&lt;/a&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 6594</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a href=&quot;/services/&quot;&gt;Business Solutions&lt;/a&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 6637</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a href=&quot;https://plus.google.com/108349337900676782287&quot; rel=&quot;publisher&quot;&gt;+Google&lt;/a&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 6637</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a href=&quot;https://plus.google.com/108349337900676782287&quot; rel=&quot;publisher&quot;&gt;+Google&lt;/a&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 6720</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a href=&quot;/intl/en/about.html&quot;&gt;About Google&lt;/a&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 6720</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a href=&quot;/intl/en/about.html&quot;&gt;About Google&lt;/a&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 6766</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a href=&quot;http://www.google.ca/setprefdomain?prefdom=US&amp;amp;sig=__uxLECt4mRPMEAEPYTpaWWs70EiM%3D&quot; id= ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 6766</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a href=&quot;http://www.google.ca/setprefdomain?prefdom=US&amp;amp;sig=__uxLECt4mRPMEAEPYTpaWWs70EiM%3D&quot; id= ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 6952</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a href=&quot;/intl/en/policies/privacy/&quot;&gt;Privacy&lt;/a&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 6952</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a href=&quot;/intl/en/policies/privacy/&quot;&gt;Privacy&lt;/a&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 7003</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=197"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=197'); return false;" 
+               target="_new">Anchor text may not identify the link destination.</a>
+         </span>
+         <pre><code class="input">&lt;a href=&quot;/intl/en/policies/terms/&quot;&gt;Terms&lt;/a&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 7003</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=19"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=19'); return false;" 
+               target="_new">Link text may not be meaningful.</a>
+         </span>
+         <pre><code class="input">&lt;a href=&quot;/intl/en/policies/terms/&quot;&gt;Terms&lt;/a&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 7067</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=89"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=89'); return false;" 
+               target="_new"><code>script</code> user interface may not be accessible.</a>
+         </span>
+         <pre><code class="input">&lt;script&gt;(function(){window.google.cdo={height:0,width:0};(function(){var a=window.innerWidth,b=windo ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 7067</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=86"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=86'); return false;" 
+               target="_new"><code>script</code> may use color alone.</a>
+         </span>
+         <pre><code class="input">&lt;script&gt;(function(){window.google.cdo={height:0,width:0};(function(){var a=window.innerWidth,b=windo ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 7067</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=87"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=87'); return false;" 
+               target="_new"><code>script</code> may cause screen flicker.</a>
+         </span>
+         <pre><code class="input">&lt;script&gt;(function(){window.google.cdo={height:0,width:0};(function(){var a=window.innerWidth,b=windo ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 7134</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=89"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=89'); return false;" 
+               target="_new"><code>script</code> user interface may not be accessible.</a>
+         </span>
+         <pre><code class="input">&lt;script&gt;(function(){function c(b){window.setTimeout(function(){var a=document.createElement(&quot;script&quot; ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 7134</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=86"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=86'); return false;" 
+               target="_new"><code>script</code> may use color alone.</a>
+         </span>
+         <pre><code class="input">&lt;script&gt;(function(){function c(b){window.setTimeout(function(){var a=document.createElement(&quot;script&quot; ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+      <li class="msg_info">
+         <span class="err_type"><img src="http://achecker.ca/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 41, Column 7134</em>:
+         <span class="msg">
+            <a href="http://achecker.ca/checker/suggestion.php?id=87"
+               onclick="AChecker.popup('http://achecker.ca/checker/suggestion.php?id=87'); return false;" 
+               target="_new"><code>script</code> may cause screen flicker.</a>
+         </span>
+         <pre><code class="input">&lt;script&gt;(function(){function c(b){window.setTimeout(function(){var a=document.createElement(&quot;script&quot; ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+         
+         
+       </li>
+</ul>
+</div>
+
+</body></html>

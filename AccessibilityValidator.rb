@@ -1,8 +1,14 @@
 require 'selenium-webdriver'
 require 'mail'
 require 'net/smtp'
+require 'pry'
+require 'sudo'
 
+require_relative 'emailReports'
 
+class AccessibilityValidator
+
+end
 # # Chrome browser instantiation
 # driver = Selenium::WebDriver.for :chrome
 
@@ -24,27 +30,14 @@ require 'net/smtp'
 # # Quitting the browser
 # driver.quit
 
+# Email report
+# email = Email.new('/Users/mike/Downloads/achecker_2016-09-21_20-10-49.pdf')
+# Mail.defaults do
+#   delivery_method :smtp, email.options
+# end
+# email.send
 
-# email me report
-options = { :address => "smtp.gmail.com",
-            :port => 587,
-            :user_name => 'pixoqainternal@gmail.com',
-            :password => 'iZotope1986',
-            :authentication => 'plain',
-            :enable_starttls_auto => true
-}
-
-Mail.defaults do
-  delivery_method :smtp, options
-end
-
-mail = Mail.new do
-  from 'qa@pixotech.com'
-  to 'mike@pixotech.com'
-  subject 'test'
-  body 'test'
-end
-
-mail.add_file('/Users/mike/Downloads/achecker_2016-09-21_20-10-49.pdf')
-
-mail.deliver
+# Copy report to logs
+logsDir = Dir.pwd + "/logs"
+file = Dir.glob("/users/mike/Downloads/achecker_*").max_by {|f| File.mtime(f)}
+FileUtils.mv(file, logsDir, options = { :force => true})
