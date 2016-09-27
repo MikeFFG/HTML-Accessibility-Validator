@@ -1,6 +1,7 @@
 require 'trollop'
 
 require_relative 'email_reports'
+require_relative 'accessibility_validator'
 require_relative 'html_validator'
 
 # Coordinate running of html and accessibility validators
@@ -24,19 +25,25 @@ class ValidationRunner
 
   end
 
+  def run_access_val
+
+  end
+
   # Run stuff
   def run
     parse_command_line
-    html_validator = HTMLValidator.new(command_line_options)
-    json_response = html_validator.request_to_json
+    access_validator = AccessibilityValidator.new(command_line_options)
+    access_validator.run_validator
+    # html_validator = HTMLValidator.new(command_line_options)
+    # json_response = html_validator.request_to_json
 
-    write_to_file(JSON.pretty_generate(json_response))
+    # write_to_file(JSON.pretty_generate(json_response))
 
-    email = Email.new('logs/testfile.json')
-    Mail.defaults do
-      delivery_method :smtp, email.options
-    end
-    email.send
+    # email = Email.new('logs/testfile.json')
+    # Mail.defaults do
+      # delivery_method :smtp, email.options
+    # end
+    # email.send
   end
 end
 
