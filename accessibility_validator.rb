@@ -16,6 +16,7 @@ driver = Selenium::WebDriver.for :chrome
 # Navigate to accessibility checker
 driver.navigate.to "http://fae20.cita.illinois.edu/login/"
 
+# Log in
 driver.find_element(:id, 'id_username').send_keys('pixo.qa')
 driver.find_element(:id, 'id_password').send_keys('P9cTntdXK2')
 driver.find_element(:css, "input[type='submit']").click
