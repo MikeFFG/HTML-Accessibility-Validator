@@ -22,11 +22,17 @@ class ValidationRunner
   end
 
   def run_html_val
-
   end
 
   def run_access_val
+  end
 
+  def email_report
+    email = Email.new('logs/testfile.json')
+    Mail.defaults do
+      delivery_method :smtp, email.options
+    end
+    email.send
   end
 
   # Run stuff
@@ -34,19 +40,15 @@ class ValidationRunner
     parse_command_line
     access_validator = AccessibilityValidator.new(command_line_options)
     access_validator.run_validator
-    # html_validator = HTMLValidator.new(command_line_options)
-    # json_response = html_validator.request_to_json
 
-    # write_to_file(JSON.pretty_generate(json_response))
+    html_validator = HTMLValidator.new(command_line_options)
+    json_response = html_validator.request_to_json
 
-    # email = Email.new('logs/testfile.json')
-    # Mail.defaults do
-      # delivery_method :smtp, email.options
-    # end
-    # email.send
+    write_to_file(JSON.pretty_generate(json_response))
+
+    email_report
   end
 end
 
 validation_runner = ValidationRunner.new
 validation_runner.run
-

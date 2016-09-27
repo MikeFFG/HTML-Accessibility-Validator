@@ -9,7 +9,7 @@ require 'sudo'
 
 require_relative 'email_reports'
 
-
+# Runs Accessibility Validator at http://fae20.cita.illinois.edu/
 class AccessibilityValidator
   def initialize(options)
     @options = options
@@ -17,7 +17,7 @@ class AccessibilityValidator
   end
 
   def strip_http(url)
-    url.sub(/https*:\/\//, '')
+    url.sub(%r{https*:\/\/}, '')
   end
 
   def instantiate_browser
@@ -27,7 +27,7 @@ class AccessibilityValidator
 
   def navigate_to_page
     # Navigate to accessibility checker
-    @driver.navigate.to "http://fae20.cita.illinois.edu/login/"
+    @driver.navigate.to 'http://fae20.cita.illinois.edu/login/'
   end
 
   def enter_credentials
@@ -49,7 +49,7 @@ class AccessibilityValidator
     # Wait for processing to finish before going to Archived Reports
     wait = Selenium::WebDriver::Wait.new(timeout: 60)
     begin
-      element = wait.until { @driver.find_element(:link_text => @title) }
+      wait.until { @driver.find_element(:link_text => @title) }
     end
     @driver.find_element(:link_text => 'Archived Reports').click
   end
@@ -60,7 +60,8 @@ class AccessibilityValidator
   end
 
   def read_json_data
-    json_link = @driver.find_element(:css, "#id_table_reports tbody tr:first-of-type td:last-of-type a").attribute("href")
+    css_id = '#id_table_reports tbody tr:first-of-type td:last-of-type a'
+    json_link = @driver.find_element(:css, css_id).attribute('href')
 
     # Read json from link and write to Ruby hash
     returned_data = JSON.parse(open(json_link) { |f| f.read })
@@ -81,7 +82,9 @@ class AccessibilityValidator
   end
 end
 
-# # Copy report to logs
-# # logs_dir = Dir.pwd + '/logs'
-# # file = Dir.glob('/users/mike/Downloads/achecker_*').max_by { |f| File.mtime(f) }
-# # FileUtils.mv(file, logs_dir, force: true)
+# Copy report to logs
+# logs_dir = Dir.pwd + '/logs'
+# file = Dir.glob('/users/mike/Downloads/achecker_*').max_by do |f|
+#   File.mtime(f)
+# end
+# FileUtils.mv(file, logs_dir, force: true)
