@@ -4,7 +4,7 @@ require_relative 'email_reports'
 require_relative 'accessibility_validator'
 require_relative 'html_validator'
 
-# Coordinate running of html and accessibility validators
+# Coordinates running of html and accessibility validators
 class ValidationRunner
   attr_accessor :command_line_options
 
@@ -44,9 +44,9 @@ class ValidationRunner
     html_validator = HTMLValidator.new(command_line_options)
     json_response = html_validator.request_to_json
 
-    write_to_file(JSON.pretty_generate(json_response))
+    # write_to_file(JSON.pretty_generate(json_response))
 
-    email_report
+    # email_report
   end
 end
 

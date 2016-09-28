@@ -2,10 +2,8 @@ require 'net/http'
 require 'uri'
 require 'json'
 require 'csv'
-require 'pry'
-require 'trollop'
 
-# Runs HTML validation on given url
+# Runs HTML validation at http://validator.w3.org/nu/ on given url
 class HTMLValidator
   attr_reader :csv_string
 

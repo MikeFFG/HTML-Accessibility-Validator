@@ -1,10 +1,8 @@
 require 'selenium-webdriver'
-require 'mail'
 require 'net/smtp'
 require 'net/http'
 require 'uri'
 require 'open-uri'
-require 'pry'
 require 'sudo'
 
 require_relative 'email_reports'
@@ -49,9 +47,9 @@ class AccessibilityValidator
     # Wait for processing to finish before going to Archived Reports
     wait = Selenium::WebDriver::Wait.new(timeout: 60)
     begin
-      wait.until { @driver.find_element(:link_text => @title) }
+      wait.until { @driver.find_element(link_text: @title) }
     end
-    @driver.find_element(:link_text => 'Archived Reports').click
+    @driver.find_element(link_text: 'Archived Reports').click
   end
 
   def quit_browser
@@ -64,7 +62,7 @@ class AccessibilityValidator
     json_link = @driver.find_element(:css, css_id).attribute('href')
 
     # Read json from link and write to Ruby hash
-    returned_data = JSON.parse(open(json_link) { |f| f.read })
+    returned_data = JSON.parse(open(json_link, &:read))
 
     # Make pretty JSON
     json_data = JSON.pretty_generate(returned_data)
