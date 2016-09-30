@@ -14,6 +14,7 @@ class ValidationRunner
   def parse_command_line
     @command_line_options = Trollop.options do
       opt :url, 'Enter URL for testing', type: :string
+      opt :title, 'Enter title for tests', type: :string
     end
   end
 
@@ -43,6 +44,7 @@ class ValidationRunner
 
     html_validator = HTMLValidator.new(command_line_options)
     json_response = html_validator.request_to_json
+    puts JSON.pretty_generate(json_response)
 
     # write_to_file(JSON.pretty_generate(json_response))
 
