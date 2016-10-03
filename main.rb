@@ -44,7 +44,7 @@ class ValidationRunner
 
     html_validator = HTMLValidator.new(command_line_options)
     json_response = html_validator.request_to_json
-    puts JSON.pretty_generate(json_response)
+    # puts JSON.pretty_generate(json_response)
 
     # write_to_file(JSON.pretty_generate(json_response))
 

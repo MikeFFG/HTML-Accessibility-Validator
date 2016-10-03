@@ -12,7 +12,7 @@ require_relative 'email_reports'
 class AccessibilityValidator
   def initialize(options)
     @options = options
-    @title = @options[:title]
+    @title = @options[:title] || "Untitled"
   end
 
   def strip_http(url)
@@ -68,7 +68,6 @@ class AccessibilityValidator
 
     # Make pretty JSON
     json_data = JSON.pretty_generate(returned_data)
-    puts json_data
   end
 
   def run_validator
