@@ -29,6 +29,9 @@ a {
   background: #dddddd;
   border-radius: 4px;
 }
+.tabs li.selected {
+  background: blue;
+}
 
 .inner_list li{
   list-style: square;
@@ -43,6 +46,4 @@ td, th {
   padding: 2px;
 }
 
-.tabs li.selected {
-  background: blue;
-}
+

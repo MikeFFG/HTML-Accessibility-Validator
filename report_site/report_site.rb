@@ -21,7 +21,7 @@ end
 
 helpers do
   def get_single_site_access_violations(index)
-    return session[:access_vals_all][index]["page_eval_rule_results"].select do |result|
+    return session[:access_vals_all][index]['page_eval_rule_results'].select do |result|
       result['fields']['elements_violation'] > 0
     end
   end
@@ -53,8 +53,6 @@ before do
 end
 
 get '/' do
-  @site_tabs = session[:site_tabs] # temp
-
   redirect "/0"
 end
 
