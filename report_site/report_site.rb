@@ -4,6 +4,9 @@ require "sinatra/reloader"
 require "tilt/erubis"
 require 'json'
 
+ACCESS_VAL_LOC = '/report_site/data/accessibility_validation_sample.json'
+HTML_VAL_LOC = '/report_site/data/html_validation_sample.json'
+
 configure do
   set :erb, :escape_html => true
 end
@@ -15,7 +18,10 @@ get '/' do
                "somekey2" => "somevalue2",
                "somekey3" => "somevalue3",
              }
-  @html_val = JSON.parse(File.read(Dir.pwd + '/report_site/data/html_validation_sample.json'))
+  @html_val = JSON.parse(File.read(Dir.pwd + HTML_VAL_LOC))
+  @access_val = JSON.parse(File.read(Dir.pwd + ACCESS_VAL_LOC))["page_eval_rule_results"].select do |result|
+                  result['fields']['elements_violation'] > 0
+                end
 
   erb :table
 end

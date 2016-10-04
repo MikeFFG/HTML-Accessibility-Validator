@@ -1,18 +1,31 @@
-<section id="tabs">
+<section class="tabs">
   <ul>
   <% @site_tabs.each do |value| %>
     <li><%= value %></li>
   <% end %>
   </ul>
 </section>
-<section id="table accessibility">
+<h1><%= @html_val["url"] %></h1>
+<section id="list accessibility">
+  <h2>Accessibility Validation</h2>
+  <ul>
+    <% @access_val.each do |result| %>
+      <li><h3><%= result['fields']['rule'][0] %></h3>
+        <ul class="inner_list">
+          <li><%= result['fields']['rule'][1] %></li>
+          <li><%= result['fields']['rule'][3] %></li>
+          <li><%= result['fields']['message'] %></li>
+          <li><%= 'number of violations: ' +
+              result['fields']['elements_violation'].to_s %></li>
+        </ul>
+      </li>
+    <% end %>
+  </ul>
 </section>
 <section id="table html">
   <table>
     <thead>
-      <tr>
-        <th><%= @html_val["url"] %></th>
-      </tr>
+      <h2>HTML Validation</h2>
       <tr>
         <th>Type</th>
         <th>Url</th>

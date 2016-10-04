@@ -8,20 +8,27 @@ body {
 main {
   height: 100%;
   padding: 10px;
-  background: #eeeeee;
 }
+
 section, ul {
-  padding: 0;
   margin: 0;
 }
 
-li {
+.tabs ul {
+  margin: 0;
+  padding: 0;
+}
+.tabs li {
   display: inline-block;
   list-style: none;
   padding: 10px;
-  margin: 10px 0;
+  /*margin: 10px 0;*/
   background: #dddddd;
   border-radius: 4px;
+}
+
+.inner_list li{
+  list-style: square;
 }
 
 table {
