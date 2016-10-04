@@ -1,9 +1,15 @@
 <section class="tabs">
   <ul>
   <% @site_tabs.each_with_index do |value, index| %>
-    <li data-id=<%= index %>>
-      <%= value %>
-    </li>
+    <a href="/<%= index %>">
+      <% if @index == index %>
+        <li data-id=<%= index %> class="selected">
+      <% else %>
+        <li data-id=<%= index %>>
+      <% end %>
+        <%= value %>
+      </li>
+    </a>
   <% end %>
   </ul>
 </section>

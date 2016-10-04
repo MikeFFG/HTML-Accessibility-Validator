@@ -37,26 +37,32 @@ helpers do
   def read_access_data_from_logs
     JSON.parse(File.read(Dir.pwd + ACCESS_VAL_LOC2))
   end
+
+  def get_site_tabs
+    session[:html_vals_all].map do |site|
+      site['url']
+    end
+  end
 end
 
 before do
   session[:index] ||= 0
-  session[:site_tabs] = ["title1", "title2", "title"]
   session[:access_vals_all] = read_access_data_from_logs
   session[:html_vals_all] = read_html_data_from_logs
+  session[:site_tabs] = get_site_tabs
 end
 
 get '/' do
   @site_tabs = session[:site_tabs] # temp
 
-  redirect "/1"
+  redirect "/0"
 end
 
 get '/:id' do
-  index = params[:id].to_i
+  @index = params[:id].to_i
   @site_tabs = session[:site_tabs] # temp
-  @access_val = get_single_site_access_violations(index)
-  @html_val = get_single_site_html_violations(index)
+  @access_val = get_single_site_access_violations(@index)
+  @html_val = get_single_site_html_violations(@index)
 
   erb :table
 end
