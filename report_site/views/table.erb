@@ -1,10 +1,13 @@
 <section class="tabs">
   <ul>
-  <% @site_tabs.each do |value| %>
-    <li><%= value %></li>
+  <% @site_tabs.each_with_index do |value, index| %>
+    <li data-id=<%= index %>>
+      <%= value %>
+    </li>
   <% end %>
   </ul>
 </section>
+
 <section id="main">
 <h1><%= @html_val["url"] %></h1>
   <h2>Accessibility Validation</h2>
