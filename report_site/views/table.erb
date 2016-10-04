@@ -6,8 +6,33 @@
   </ul>
 </section>
 <section id="table accessibility">
-  test
 </section>
 <section id="table html">
-  test
+  <table>
+    <thead>
+      <tr>
+        <th><%= @html_val["url"] %></th>
+      </tr>
+      <tr>
+        <th>Type</th>
+        <th>Url</th>
+        <th>subtype</th>
+        <th>Line Number</th>
+        <th>message</th>
+        <th>Code</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @html_val['messages'].each do |message| %>
+        <tr>
+        <td><%= message['type'] %></td>
+        <td><%= message['url'] %></td>
+        <td><%= message['subType'] %></td>
+        <td><%= message['lastLine'] %></td>
+        <td><%= message['message'] %></td>
+        <td><%= message['extract'] %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 </section>
