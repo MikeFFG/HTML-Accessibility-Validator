@@ -5,8 +5,8 @@
   <% end %>
   </ul>
 </section>
+<section id="main">
 <h1><%= @html_val["url"] %></h1>
-<section id="list accessibility">
   <h2>Accessibility Validation</h2>
   <ul>
     <% @access_val.each do |result| %>
@@ -21,25 +21,21 @@
       </li>
     <% end %>
   </ul>
-</section>
-<section id="table html">
   <table>
     <thead>
       <h2>HTML Validation</h2>
       <tr>
         <th>Type</th>
-        <th>Url</th>
-        <th>subtype</th>
+        <th>Subtype</th>
         <th>Line Number</th>
-        <th>message</th>
-        <th>Code</th>
+        <th>Message</th>
+        <th>Code Snippet</th>
       </tr>
     </thead>
     <tbody>
       <% @html_val['messages'].each do |message| %>
         <tr>
         <td><%= message['type'] %></td>
-        <td><%= message['url'] %></td>
         <td><%= message['subType'] %></td>
         <td><%= message['lastLine'] %></td>
         <td><%= message['message'] %></td>
