@@ -3,11 +3,11 @@ require 'googleauth'
 require 'googleauth/stores/file_token_store'
 require 'fileutils'
 
-OOB_URI = 'urn:ietf:wg:oauth:2.0:oob'
-APPLICATION_NAME = 'Google Sheets API Ruby Quickstart'
-CLIENT_SECRETS_PATH = 'client_secret.json'
+OOB_URI = 'urn:ietf:wg:oauth:2.0:oob'.freeze
+APPLICATION_NAME = 'Google Sheets API Ruby Quickstart'.freeze
+CLIENT_SECRETS_PATH = 'client_secret.json'.freeze
 CREDENTIALS_PATH = File.join(Dir.home, '.credentials',
-                             "sheets.googleapis.com-ruby-quickstart.yaml")
+                             'sheets.googleapis.com-ruby-quickstart.yaml').freeze
 SCOPE = Google::Apis::SheetsV4::AUTH_SPREADSHEETS_READONLY
 
 ##
@@ -28,8 +28,8 @@ def authorize
   if credentials.nil?
     url = authorizer.get_authorization_url(
       base_url: OOB_URI)
-    puts "Open the following URL in the browser and enter the " +
-         "resulting code after authorization"
+    puts 'Open the following URL in the browser and enter the ' +
+         'resulting code after authorization'
     puts url
     code = gets
     credentials = authorizer.get_and_store_credentials_from_code(
@@ -42,7 +42,6 @@ end
 service = Google::Apis::SheetsV4::SheetsService.new
 service.client_options.application_name = APPLICATION_NAME
 service.authorization = authorize
-
 
 # My code
 spreadsheet_id = '1PRqzAK8M2qPhV2navyistU41cvfVjZL3W0iWClF0h5M'

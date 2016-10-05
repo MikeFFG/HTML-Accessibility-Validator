@@ -12,7 +12,7 @@ require_relative 'email_reports'
 class AccessibilityValidator
   def initialize(options)
     @options = options
-    @title = @options[:title] || "Untitled"
+    @title = @options[:title] || 'Untitled'
   end
 
   def strip_http(url)
