@@ -19,7 +19,15 @@ class ValidationRunner
   end
 
   def write_to_file(data)
-    File.write('logs/testfile.json', data)
+    File.write('logs/html_data.json', data)
+  end
+
+  def append_to_file(data, file)
+    temp = JSON.parse(File.read(file))
+    temp.push(data)
+    target_file = open(file, 'w+')
+    target_file.write(JSON.pretty_generate(temp))
+    target_file.close
   end
 
   def run_html_val
@@ -39,14 +47,15 @@ class ValidationRunner
   # Run stuff
   def run
     parse_command_line
-    access_validator = AccessibilityValidator.new(command_line_options)
-    access_validator.run_validator
+    # access_validator = AccessibilityValidator.new(command_line_options)
+    # access_validator.run_validator
 
     html_validator = HTMLValidator.new(command_line_options)
     json_response = html_validator.request_to_json
+    # puts json_response.class
     # puts JSON.pretty_generate(json_response)
 
-    # write_to_file(JSON.pretty_generate(json_response))
+    append_to_file(json_response, 'logs/html_data.json')
 
     # email_report
   end
