@@ -18,16 +18,20 @@
 <h1><%= @html_val["url"] %></h1>
   <h2>Accessibility Validation</h2>
   <ul>
-    <% @access_val.each do |result| %>
-      <li><h3><%= result['fields']['rule'][0] %></h3>
-        <ul class="inner_list">
-          <li><%= result['fields']['rule'][1] %></li>
-          <li><%= result['fields']['rule'][3] %></li>
-          <li><%= result['fields']['message'] %></li>
-          <li><%= 'number of violations: ' +
-              result['fields']['elements_violation'].to_s %></li>
-        </ul>
-      </li>
+    <% if @access_val.nil? %>
+      <h3>No Data</h3>
+    <% else %>
+      <% @access_val.each do |result| %>
+        <li><h3><%= result['fields']['rule'][0] %></h3>
+          <ul class="inner_list">
+            <li><%= result['fields']['rule'][1] %></li>
+            <li><%= result['fields']['rule'][3] %></li>
+            <li><%= result['fields']['message'] %></li>
+            <li><%= 'number of violations: ' +
+                result['fields']['elements_violation'].to_s %></li>
+          </ul>
+        </li>
+      <% end %>
     <% end %>
   </ul>
   <table>

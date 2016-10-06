@@ -3,6 +3,7 @@ require 'sinatra/content_for'
 require 'sinatra/reloader'
 require 'tilt/erubis'
 require 'json'
+require 'pry'
 
 ACCESS_VAL_LOC = '/report_site/data/accessibility_validation_sample.json'.freeze
 HTML_VAL_LOC = '/report_site/data/html_validation_sample.json'.freeze
@@ -17,8 +18,12 @@ end
 
 helpers do
   def get_single_site_access_violations(index)
-    session[:access_vals_all][index]['page_eval_rule_results'].select do |site|
-      site['fields']['elements_violation'] > 0
+    access_vals = session[:access_vals_all][index]
+
+    if !access_vals.nil?
+      access_vals['page_eval_rule_results'].select do |site|
+        site['fields']['elements_violation'] > 0
+      end
     end
   end
 
