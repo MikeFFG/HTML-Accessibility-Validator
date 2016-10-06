@@ -10,6 +10,8 @@ require_relative 'email_reports'
 
 # Runs Accessibility Validator at http://fae20.cita.illinois.edu/
 class AccessibilityValidator
+  attr_reader :returned_data
+
   def initialize(options)
     @options = options
     @title = @options[:title] || 'Untitled'
@@ -57,6 +59,14 @@ class AccessibilityValidator
     @driver.quit
   end
 
+  def append_to_file(data, file)
+    temp = JSON.parse(File.read(file))
+    temp.push(data)
+    target_file = open(file, 'w+')
+    target_file.write(JSON.pretty_generate(temp))
+    target_file.close
+  end
+
   def read_json_data
     # Grab the href of the link in the first row, last cell of the reports
     # table. It should be the JSON link.
@@ -64,7 +74,7 @@ class AccessibilityValidator
     json_link = @driver.find_element(:css, css_id).attribute('href')
 
     # Read json from link and write to Ruby hash
-    returned_data = JSON.parse(open(json_link, &:read))
+    @returned_data = JSON.parse(open(json_link, &:read))
 
     # Make pretty JSON
     json_data = JSON.pretty_generate(returned_data)
@@ -78,6 +88,7 @@ class AccessibilityValidator
     navigate_to_archived_reports
     read_json_data
     quit_browser
+    @returned_data
   end
 end
 
