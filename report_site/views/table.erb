@@ -22,13 +22,12 @@
       <h3>No Data</h3>
     <% else %>
       <% @access_val.each do |result| %>
-        <li><h3><%= result['fields']['rule'][0] %></h3>
+        <li><h3><%= result['rule_category'] %></h3>
           <ul class="inner_list">
-            <li><%= result['fields']['rule'][1] %></li>
-            <li><%= result['fields']['rule'][3] %></li>
-            <li><%= result['fields']['message'] %></li>
+            <li><%= result['summary'] %></li>
+            <li><%= result['wcag20'] %></li>
             <li><%= 'number of violations: ' +
-                result['fields']['elements_violation'].to_s %></li>
+                result['elements_violation'].to_s %></li>
           </ul>
         </li>
       <% end %>

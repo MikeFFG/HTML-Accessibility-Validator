@@ -7,22 +7,22 @@ require 'pry'
 
 ACCESS_VAL_LOC = '/report_site/data/accessibility_validation_sample.json'.freeze
 HTML_VAL_LOC = '/report_site/data/html_validation_sample.json'.freeze
-ACCESS_VAL_LOC2 = '/logs/accessibility_data.json'.freeze
-HTML_VAL_LOC2 = '/logs/html_data.json'.freeze
+ACCESS_VAL_LOC2 = '/../logs/accessibility_data.json'.freeze
+HTML_VAL_LOC2 = '/../logs/html_data.json'.freeze
 
 configure do
   enable :sessions
   set :session_secret, 'secret'
   set :erb, escape_html: true
+  set port: 7655
 end
 
 helpers do
   def get_single_site_access_violations(index)
     access_vals = session[:access_vals_all][index]
-
     if !access_vals.nil?
-      access_vals['page_eval_rule_results'].select do |site|
-        site['fields']['elements_violation'] > 0
+      access_vals['rule_results'].select do |site|
+        site['elements_violation'] > 0
       end
     end
   end
