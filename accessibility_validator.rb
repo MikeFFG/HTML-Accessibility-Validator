@@ -28,7 +28,7 @@ class AccessibilityValidator
 
   def navigate_to_page
     # Navigate to accessibility checker
-    @driver.navigate.to 'http://fae20.cita.illinois.edu/login/'
+    @driver.navigate.to 'https://fae.disability.illinois.edu/registration/login/'
   end
 
   def enter_credentials
@@ -70,7 +70,7 @@ class AccessibilityValidator
   def read_json_data
     # Grab the href of the link in the first row, last cell of the reports
     # table. It should be the JSON link.
-    css_id = '#id_table_reports tbody tr:first-of-type td:last-of-type a'
+    css_id = '#id_reports_label_table tbody tr:first-of-type td:last-of-type a'
     json_link = @driver.find_element(:css, css_id).attribute('href')
 
     # Read json from link and write to Ruby hash

@@ -3,6 +3,7 @@ require 'trollop'
 require_relative 'email_reports'
 require_relative 'accessibility_validator'
 require_relative 'html_validator'
+require_relative 'google_downloader'
 
 ACCESS_VAL_DATA_PATH = 'logs/accessibility_data.json'
 HTML_VAL_DATA_PATH = 'logs/html_data.json'
@@ -19,21 +20,11 @@ class ValidationRunner
       opt :url, 'Enter URL for testing', type: :string
       opt :title, 'Enter title for tests', type: :string
       opt :clear, 'Clears previous logs'
+      opt :auto, 'Use google drive spreadsheet'
     end
   end
 
-  # def write_to_file(data)
-  #   File.write('logs/html_data.json', data)
-  # end
-
-  def file_empty?(file)
-  end
-
   def append_to_file(data, file)
-    # if file_empty?(file)
-
-    # end
-
     temp = JSON.parse(File.read(file))
     temp.push(data)
     target_file = open(file, 'w+')
@@ -47,12 +38,6 @@ class ValidationRunner
     log_file.close
   end
 
-  def run_html_val
-  end
-
-  def run_access_val
-  end
-
   def email_report
     email = Email.new('logs/testfile.json')
     Mail.defaults do
@@ -61,24 +46,55 @@ class ValidationRunner
     email.send
   end
 
+  def run_google_downloader
+    # Run google downloader
+    downloader = GoogleDownloader.new
+    downloader.run_downloader
+  end
+
+  def run_html_val(site_data)
+    html_validator = HTMLValidator.new(site_data)
+    json_response = html_validator.request_to_json
+    append_to_file(json_response, HTML_VAL_DATA_PATH)
+  end
+
+  def run_access_val(site_data)
+    access_validator = AccessibilityValidator.new(site_data)
+    access_data = access_validator.run_validator
+    append_to_file(access_data, ACCESS_VAL_DATA_PATH)
+  end
+
+  def single_iteration(single_site_data)
+    run_html_val(single_site_data)
+    run_access_val(single_site_data)
+  end
+
   # Run stuff
   def run
     parse_command_line
 
+    # Clear logs if -c flag included on command line
     if command_line_options[:clear]
       clear_log_file(ACCESS_VAL_DATA_PATH)
       clear_log_file(HTML_VAL_DATA_PATH)
     end
 
-    # Access val
-    access_validator = AccessibilityValidator.new(command_line_options)
-    access_data = access_validator.run_validator
-    append_to_file(access_data, ACCESS_VAL_DATA_PATH)
+    # Choose between auto google sheet data and cli data
+    if command_line_options[:auto]
+      clear_log_file(ACCESS_VAL_DATA_PATH)
+      clear_log_file(HTML_VAL_DATA_PATH)
 
-    # HTML Val
-    html_validator = HTMLValidator.new(command_line_options)
-    json_response = html_validator.request_to_json
-    append_to_file(json_response, HTML_VAL_DATA_PATH)
+      multi_site_data = run_google_downloader
+
+      multi_site_data.each do |single_site_data|
+        single_iteration(single_site_data)
+      end
+
+    else
+      single_site_data = { title: command_line_options[:title] || 'Untitled',
+                           url: command_line_options[:url] }
+      single_iteration(single_site_data)
+    end
   end
 end
 

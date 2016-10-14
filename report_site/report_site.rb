@@ -7,8 +7,8 @@ require 'pry'
 
 ACCESS_VAL_LOC = '/report_site/data/accessibility_validation_sample.json'.freeze
 HTML_VAL_LOC = '/report_site/data/html_validation_sample.json'.freeze
-ACCESS_VAL_LOC2 = '/../logs/accessibility_data.json'.freeze
-HTML_VAL_LOC2 = '/../logs/html_data.json'.freeze
+ACCESS_VAL_LOC2 = '/logs/accessibility_data.json'.freeze
+HTML_VAL_LOC2 = '/logs/html_data.json'.freeze
 
 configure do
   enable :sessions
