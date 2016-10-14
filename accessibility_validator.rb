@@ -40,7 +40,9 @@ class AccessibilityValidator
 
   def enter_query_info
     # Enter info and click
-    @driver.find_element(:id, 'id_input_url').send_keys(strip_http(@options[:url]))
+    @driver.find_element(:id, 'id_input_url')
+           .send_keys(strip_http(@options[:url]))
+
     @driver.find_element(:id, 'id_input_title').send_keys(@title)
     @driver.find_element(:id, 'depth_1').click
     @driver.find_element(:id, 'id_submit').click
@@ -76,8 +78,8 @@ class AccessibilityValidator
     # Read json from link and write to Ruby hash
     @returned_data = JSON.parse(open(json_link, &:read))
 
-    # Make pretty JSON
-    json_data = JSON.pretty_generate(returned_data)
+    # Return pretty JSON
+    JSON.pretty_generate(returned_data)
   end
 
   def run_validator

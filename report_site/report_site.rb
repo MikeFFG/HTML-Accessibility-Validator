@@ -20,10 +20,10 @@ end
 helpers do
   def get_single_site_access_violations(index)
     access_vals = session[:access_vals_all][index]
-    if !access_vals.nil?
-      access_vals['rule_results'].select do |site|
-        site['elements_violation'] > 0
-      end
+    return if access_vals.nil?
+
+    access_vals['rule_results'].select do |site|
+      site['elements_violation'] > 0
     end
   end
 

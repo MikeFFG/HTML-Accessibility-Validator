@@ -5,15 +5,12 @@ require_relative 'accessibility_validator'
 require_relative 'html_validator'
 require_relative 'google_downloader'
 
-ACCESS_VAL_DATA_PATH = 'logs/accessibility_data.json'
-HTML_VAL_DATA_PATH = 'logs/html_data.json'
+ACCESS_VAL_DATA_PATH = 'logs/accessibility_data.json'.freeze
+HTML_VAL_DATA_PATH = 'logs/html_data.json'.freeze
 
 # Coordinates running of html and accessibility validators
 class ValidationRunner
   attr_accessor :command_line_options
-
-  def initialize
-  end
 
   def parse_command_line
     @command_line_options = Trollop.options do
@@ -69,27 +66,24 @@ class ValidationRunner
     run_access_val(single_site_data)
   end
 
-  # Run stuff
+  def clear_logs
+    clear_log_file(ACCESS_VAL_DATA_PATH)
+    clear_log_file(HTML_VAL_DATA_PATH)
+  end
+
+  # Run everything
   def run
     parse_command_line
-
-    # Clear logs if -c flag included on command line
-    if command_line_options[:clear]
-      clear_log_file(ACCESS_VAL_DATA_PATH)
-      clear_log_file(HTML_VAL_DATA_PATH)
-    end
+    clear_logs if command_line_options[:clear]
 
     # Choose between auto google sheet data and cli data
     if command_line_options[:auto]
-      clear_log_file(ACCESS_VAL_DATA_PATH)
-      clear_log_file(HTML_VAL_DATA_PATH)
-
+      clear_logs
       multi_site_data = run_google_downloader
 
       multi_site_data.each do |single_site_data|
         single_iteration(single_site_data)
       end
-
     else
       single_site_data = { title: command_line_options[:title] || 'Untitled',
                            url: command_line_options[:url] }
