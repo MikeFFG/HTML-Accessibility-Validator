@@ -71,7 +71,7 @@ class ValidationRunner
     clear_log_file(HTML_VAL_DATA_PATH)
   end
 
-  # Run everything
+  # Run everythings
   def run
     parse_command_line
     clear_logs if command_line_options[:clear]
