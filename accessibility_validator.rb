@@ -93,10 +93,3 @@ class AccessibilityValidator
     @returned_data
   end
 end
-
-# Copy report to logs
-# logs_dir = Dir.pwd + '/logs'
-# file = Dir.glob('/users/mike/Downloads/achecker_*').max_by do |f|
-#   File.mtime(f)
-# end
-# FileUtils.mv(file, logs_dir, force: true)
