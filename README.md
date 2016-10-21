@@ -18,7 +18,8 @@ It will then run the html and accessibility checkers on them and store it in the
 
 ```-u http://www.example.com``` - this is to manually run these checkers on one url. It will not clear the logs each time you run it.
 
-```-c``` - clears the logs before running.
+```-t "name of site/client/test"``` - adds custom title for the test (not for use with -a).
+```-c``` - clears the logs before running (not for use with -a).
 
 **Launching Site**
 
