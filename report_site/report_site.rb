@@ -5,10 +5,8 @@ require 'tilt/erubis'
 require 'json'
 require 'pry'
 
-ACCESS_VAL_LOC = '/report_site/data/accessibility_validation_sample.json'.freeze
-HTML_VAL_LOC = '/report_site/data/html_validation_sample.json'.freeze
-ACCESS_VAL_LOC2 = '/../logs/accessibility_data.json'.freeze
-HTML_VAL_LOC2 = '/../logs/html_data.json'.freeze
+ACCESS_VAL_LOC = '/logs/accessibility_data.json'.freeze
+HTML_VAL_LOC = '/logs/html_data.json'.freeze
 
 configure do
   enable :sessions
@@ -32,11 +30,11 @@ helpers do
   end
 
   def read_html_data_from_logs
-    JSON.parse(File.read(Dir.pwd + HTML_VAL_LOC2))
+    JSON.parse(File.read(Dir.pwd + HTML_VAL_LOC))
   end
 
   def read_access_data_from_logs
-    JSON.parse(File.read(Dir.pwd + ACCESS_VAL_LOC2))
+    JSON.parse(File.read(Dir.pwd + ACCESS_VAL_LOC))
   end
 
   def site_tabs
