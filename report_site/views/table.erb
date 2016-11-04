@@ -15,25 +15,29 @@
 </section>
 
 <section id="main">
-<h1><%= @html_val["url"] %></h1>
-  <h2>Accessibility Validation</h2>
-  <ul>
-    <% if @access_val.nil? %>
-      <h3>No Data</h3>
-    <% else %>
+  <table id="accessibility">
+    <thead>
+    <h2>Accessibility Validation</h2>
+    <tr>
+      <th>Rule Category</th>
+      <th>Summary</th>
+      <th>WCAG rule</th>
+      <th>Number of Violations</th>
+    </tr>
+    </thead>
+    <tbody>
       <% @access_val.each do |result| %>
-        <li><h3><%= result['rule_category'] %></h3>
-          <ul class="inner_list">
-            <li><%= result['summary'] %></li>
-            <li><%= result['wcag20'] %></li>
-            <li><%= 'number of violations: ' +
-                result['elements_violation'].to_s %></li>
-          </ul>
-        </li>
+      <tr>
+        <td><%= result['rule_category'] %></td>
+        <td><%= result['summary'] %></td>
+        <td><%= result['wcag20'] %></td>
+        <td><%= result['elements_violation'] %></td>
+      </tr>
       <% end %>
-    <% end %>
-  </ul>
-  <table>
+    </tbody>
+  </table>
+
+  <table id="html">
     <thead>
       <h2>HTML Validation</h2>
       <tr>
