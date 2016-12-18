@@ -1,0 +1,9 @@
+{
+  "name": "html_and_accessibility_validator",
+  "version": "0.1.0",
+  "devDependencies": {
+    "chromedriver": "^2.26.0",
+    "grunt": "~0.4.5",
+    "grunt-file-creator": "^0.1.3"
+  }
+}
