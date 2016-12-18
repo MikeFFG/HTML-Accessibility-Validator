@@ -1,6 +1,10 @@
-**HTML and Accessibility Validation**
+##HTML and Accessibility Validation
+
+The purpose of this repository is to create a way to automate html and accessibility validation tasks
 
 All commands are described from root of project folder.
+
+Requires gem bundler. Run `bundle install` in directory to install dependencies.
 
 **Running checker**
 
@@ -12,13 +16,19 @@ ruby main.rb [flags]
 
 __Flags:__
 
-```-a``` - stands for automatic. This will download the info from this google doc:
+```-a``` - "automatic". This will download the info from this google doc:
+
 https://docs.google.com/spreadsheets/d/1PRqzAK8M2qPhV2navyistU41cvfVjZL3W0iWClF0h5M/edit#gid=0
+
 It will then run the html and accessibility checkers on them and store it in the logs folder. This automatically clears the logs each time.
+Note that this doc is only available to those at Pixo but it could easily be repurposed for any other google doc.
+
+It will also clear the logs each time it is run
 
 ```-u http://www.example.com``` - this is to manually run these checkers on one url. It will not clear the logs each time you run it.
 
 ```-t "name of site/client/test"``` - adds custom title for the test (not for use with -a).
+
 ```-c``` - clears the logs before running (not for use with -a).
 
 **Launching Site**
