@@ -26,13 +26,15 @@
     </tr>
     </thead>
     <tbody>
-      <% @access_val.each do |result| %>
-      <tr>
-        <td><%= result['rule_category'] %></td>
-        <td><%= result['summary'] %></td>
-        <td><%= result['wcag20'] %></td>
-        <td><%= result['elements_violation'] %></td>
-      </tr>
+      <% if @access_val.size() != 0 %>
+        <% @access_val.each do |result| %>
+        <tr>
+          <td><%= result['rule_category'] %></td>
+          <td><%= result['summary'] %></td>
+          <td><%= result['wcag20'] %></td>
+          <td><%= result['elements_violation'] %></td>
+        </tr>
+        <% end %>
       <% end %>
     </tbody>
   </table>
@@ -49,14 +51,16 @@
       </tr>
     </thead>
     <tbody>
-      <% @html_val['messages'].each do |message| %>
-        <tr>
-        <td><%= message['type'] %></td>
-        <td><%= message['subType'] %></td>
-        <td><%= message['lastLine'] %></td>
-        <td><%= message['message'] %></td>
-        <td><%= message['extract'] %></td>
-        </tr>
+      <% if @html_val.size() != 0 %>
+        <% @html_val['messages'].each do |message| %>
+          <tr>
+          <td><%= message['type'] %></td>
+          <td><%= message['subType'] %></td>
+          <td><%= message['lastLine'] %></td>
+          <td><%= message['message'] %></td>
+          <td><%= message['extract'] %></td>
+          </tr>
+        <% end %>
       <% end %>
     </tbody>
   </table>

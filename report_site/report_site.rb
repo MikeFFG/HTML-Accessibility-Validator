@@ -58,8 +58,8 @@ end
 get '/:id' do
   @index = params[:id].to_i
   @site_tabs = session[:site_tabs] # temp
-  @access_val = get_single_site_access_violations(@index)
-  @html_val = get_single_site_html_violations(@index)
+  @access_val = get_single_site_access_violations(@index) || []
+  @html_val = get_single_site_html_violations(@index) || []
 
   erb :table
 end
