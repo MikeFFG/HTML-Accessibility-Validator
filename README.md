@@ -4,7 +4,12 @@ The purpose of this repository is to create a way to automate html and accessibi
 
 All commands are described from root of project folder.
 
-Requires gem bundler. Run `bundle install` in directory to install dependencies.
+Requires gem bundler, npm and grunt. 
+
+Run `bundle install` in directory to install Ruby Gem dependencies.
+Run `npm install` in directory to install node dependencies.
+Then, the first time you open the project, run `grunt create`. This will create the necessary log files.
+If you already have these files, ignore this step because this will overwrite your logs.
 
 **Running checker**
 
