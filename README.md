@@ -16,7 +16,7 @@ If you already have these files, ignore this step because this will overwrite yo
 To run the accessibility and html checker, and populate the json log files used
 by the site, type:
 ```
-ruby main.rb [flags]
+ruby validator/main.rb [flags]
 ```
 
 __Flags:__
@@ -30,7 +30,8 @@ Note that this doc is only available to those at Pixo but it could easily be rep
 
 It will also clear the logs each time it is run
 
-```-u http://www.example.com``` - this is to manually run these checkers on one url. It will not clear the logs each time you run it.
+```-u http://www.example.com``` - this is to manually run these checkers on one url. 
+It will not clear the logs each time you run it. Note you must add the http:// and quotes are not necessary.
 
 ```-t "name of site/client/test"``` - adds custom title for the test (not for use with -a).
 
