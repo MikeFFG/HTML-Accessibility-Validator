@@ -4,16 +4,16 @@ require 'googleauth/stores/file_token_store'
 require 'fileutils'
 
 OOB_URI = 'urn:ietf:wg:oauth:2.0:oob'.freeze
-APPLICATION_NAME = 'Google Sheets API Ruby Quickstart'.freeze
-CLIENT_SECRETS_PATH = 'client_secret.json'.freeze
+APPLICATION_NAME = 'Accessibility Validator'.freeze
+CLIENT_SECRETS_PATH = 'validator/client_secret.json'.freeze
 SCOPE = Google::Apis::SheetsV4::AUTH_SPREADSHEETS_READONLY
 CREDS_PATH = File.join(Dir.home, '.credentials',
                        'sheets.googleapis.com-ruby-quickstart.yaml')
                  .freeze
-SPREADSHEET_ID = '1PRqzAK8M2qPhV2navyistU41cvfVjZL3W0iWClF0h5M'.freeze
-RANGE = 'Client List!A2:E'.freeze
+SPREADSHEET_ID = '1luXZX-kgieVmFm-PDy25TJ9ihRfyit5B15JJ0oGHo6E'.freeze
+RANGE = 'A2:E'.freeze
 
-# Goes to https://docs.google.com/spreadsheets/d/1PRqzAK8M2qPhV2navyistU41cvfVjZL3W0iWClF0h5M/edit#gid=0
+# Goes to https://docs.google.com/spreadsheets/d/1luXZX-kgieVmFm-PDy25TJ9ihRfyit5B15JJ0oGHo6E/edit#gid=0
 # to get data and provide it for validation runs.
 class GoogleDownloader
   ##

@@ -26,9 +26,6 @@ __Flags:__
 https://docs.google.com/spreadsheets/d/1PRqzAK8M2qPhV2navyistU41cvfVjZL3W0iWClF0h5M/edit#gid=0
 
 It will then run the html and accessibility checkers on them and store it in the logs folder. This automatically clears the logs each time.
-Note that this doc is only available to those at Pixo but it could easily be repurposed for any other google doc.
-
-It will also clear the logs each time it is run
 
 ```-u http://www.example.com``` - this is to manually run these checkers on one url. 
 It will not clear the logs each time you run it. Note you must add the http:// and quotes are not necessary.
