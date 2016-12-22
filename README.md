@@ -4,7 +4,7 @@ The purpose of this repository is to create a way to automate html and accessibi
 
 All commands are described from root of project folder.
 
-Requires gem bundler, npm and grunt. 
+Requires gem bundler, npm and grunt.
 
 Run `bundle install` in directory to install Ruby Gem dependencies.
 Run `npm install` in directory to install node dependencies.
@@ -27,10 +27,10 @@ https://docs.google.com/spreadsheets/d/1PRqzAK8M2qPhV2navyistU41cvfVjZL3W0iWClF0
 
 It will then run the html and accessibility checkers on them and store it in the logs folder. This automatically clears the logs each time.
 
-```-u http://www.example.com``` - this is to manually run these checkers on one url. 
+```-u [url]``` - this is to manually run these checkers on one url.
 It will not clear the logs each time you run it. Note you must add the http:// and quotes are not necessary.
 
-```-t "name of site/client/test"``` - adds custom title for the test (not for use with -a).
+```-t [name of site/client/test]``` - adds custom title for the test (not for use with -a).
 
 ```-c``` - clears the logs before running (not for use with -a).
 
